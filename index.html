@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>It's raining cats</title>
+  </head>
+  <body onload="hideBackground()">
+    <div id="myContainer">
+      <img
+        id="backgroundimg"
+        src="Assets/NyanCatBackground.png"
+        alt="Background"
+      />
+      <button id="button" onclick="myMove(), showBackground(), playAudio()">
+        Make it rain.
+      </button>
+      <img id="myAnimation" src="Assets/NyanCat.png" alt="NyanCat" />
+      <audio id="music" src="Assets/Nyan Cat.mp3"></audio>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
